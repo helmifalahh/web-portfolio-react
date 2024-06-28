@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+
+#root,
+.app{
+    height: 100%;
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    @apply text-black;
+    @apply bg-gray-20 bg-cover bg-[url('https://tailframes.com/images/squares-bg.webp')] bg-center min-h-screen;
+}
+
+.followers-cursor{
+    background-color: transparent;
+    border-width: 2px;
+    border-color: black;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.inner_shadow_iplant{
+    box-shadow: inset 120px 0 90px -75px rgba(9, 70, 102, 0.6)
+}
+
+.cursor{
+    background-color: blue;
+    border-width: 2px;
+    border-color: black;
+    height: 6px;
+    width: 6px;
+    border-width: 0;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+@font-face {
+    font-family: "Reckless";
+    src: local("RecklessNeue-ThinItalic"),
+    url('porto-web\src\fonts\RecklessNeue-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FirstNeue";
+    src: local("firs-neue"),
+    url('D:\codingmantap\porto-web\porto-web\src\fonts\firs-neue.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FirstNeueRegular";
+    src: local("firs-neue"),
+    url('D:\codingmantap\porto-web\porto-web\src\fonts\firs-neue-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Gajkley";
+    src: local("Gajkley"),
+    url('D:\codingmantap\porto-web\porto-web\src\fonts\Gajkley.otf') format('opentype');
+}
