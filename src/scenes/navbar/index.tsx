@@ -4,6 +4,7 @@ import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
+import { Button } from "flowbite-react";
 
 type Props = {
     selectedPage: SelectedPage;
@@ -43,13 +44,13 @@ function Navbar({selectedPage, setSelectedPage}: Props) {
                                     />
                                 </div>
 
-                                <div className={`${flexBetween} gap-8`}>
-                                    <ActionButton setSelectedPage={setSelectedPage}>Hire Me</ActionButton>
+                                <div className={`${flexBetween} gap-8`}>  
+                                    <a href="mailto:helmifalah2002@gmail.com" className="text-white bg-primary hover:bg-primary-300 focus:ring-4 font-medium rounded-full text-sm px-10 py-3">Hire Me</a>
                                 </div>
                             </div>
                             ) : (
                                 <button
-                                  className="rounded-full bg-primary-500 p-2"
+                                  className="rounded-full bg-primary-500 p-2 z-50"
                                   onClick={() => setIsMenuToggled(!isMenuToggled)}
                                 >
                                   <Bars3Icon className="h-4 w-4 text-white" />

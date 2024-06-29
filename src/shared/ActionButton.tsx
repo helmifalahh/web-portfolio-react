@@ -6,12 +6,14 @@ AnchorLink
 
 type Props = {
     children: React.ReactNode,
-    setSelectedPage: (value: SelectedPage) => void
+    setSelectedPage: (value: SelectedPage) => void,
+    href: string
 }
 
-const ActionButton = ({children, setSelectedPage}: Props) => {
+const ActionButton = ({children, setSelectedPage, href}: Props) => {
   return (
     <AnchorLink 
+        href={href}
         className="rounded-full text-white bg-primary px-10 py-3 hover:bg-primary-300 hover:text-white cursor-pointer"
     >
         {children}

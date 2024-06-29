@@ -1,5 +1,7 @@
 import HDesc from "@/shared/HDesc"
 import HText from "@/shared/HText"
+import { IoMdCode } from "react-icons/io";
+import { BsAndroid2 } from "react-icons/bs";
 import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion"
 import Photo from "@/assets/my-photo.png"
@@ -39,19 +41,18 @@ const About = ({setSelectedPage}: Props) => {
                   <div className="absolute flex flex-col bottom-3 md:left-[-40px] z-10 space-y-2">
                     <div className="bg-sky-300 p-3 pr-6 rounded-full">
                       <div className="flex flex-row items-center">
-                        <img className='w-5 mx-2' src={Code} alt="" />
+                        <IoMdCode className="mx-2"/>
                         <h1 className="text-sm">Software Eengineer</h1>
                       </div>
                     </div>
                     <div className="bg-orange-400 p-3 pr-6 rounded-full">
                       <div className="flex flex-row items-center">
-                        <img className='w-5 mx-2' src={Code} alt="" />
+                        <BsAndroid2 className="mx-2"/>
                         <h1 className="text-sm">Android Developer</h1>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h1>helmifalah2002@gmail.com</h1>
               </div>
         </motion.div>
 
@@ -89,7 +90,7 @@ const About = ({setSelectedPage}: Props) => {
               <div className="inset-0 flex flex-col">
                 <img className="w-40 m-4 sm:m-8 lg:w-72" src={CPSLogo}/>
                 <h1 className="text-xl mx-4 sm:mx-8 text-red-950 font-semibold">Practicum Coordinator - Cyber Physical System Laboratory</h1>
-                <h1 className="text-sm mx-4 sm:mx-8">An program held by the Indonesian Ministry of Education in collaboration with Dicoding Academy which inludes three learning paths namely machine learning, android development, and cloud computing.</h1>
+                <h1 className="text-sm mx-4 sm:mx-8">Become a teaching assistant lecturer in the telecommunications network practicum course, Lead the running of practicum in odd semester lectures, and Develop study learning plan for Telecommunication Network practicum course.</h1>
                 <div className="md:flex m-4 lg:m-0 lg:mb-4 sm:m-2 sm:ms-8 md:ms-8 lg:ms-8 my-5 gap-2">
                   <div className="md:flex mt-3 md:w-96 p-2 rounded-2xl bg-gradient-to-r from-[#019510] from-20% to-[#0FCF22] to-97%">
                     <img className="rounded-xl" src={Cert_CPS}/>

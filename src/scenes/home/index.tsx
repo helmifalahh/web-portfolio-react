@@ -43,7 +43,7 @@ const Home = ({setSelectedPage}: Props) => {
                             </div>
 
                             <p className='my-5 md:text-start'>
-                                Final year student majoring in Telecommunication Engineering who has an great interest in the field of Software Development especially Mobile Development using Kotlin Language, UI/UX, and front end.
+                                Deeply passionate about software development, especially mobile development with Kotlin. I thrive in creating stylish UI/UX designs and evolving front-end development to enhance user experiences.
                             </p>
                         </div>
                     </motion.div>
@@ -66,7 +66,7 @@ const Home = ({setSelectedPage}: Props) => {
                         <a href="https://github.com/helmifalahh">
                             <AiFillGithub className='text-2xl bg-primary box-content p-3 rounded-3xl hover:bg-primary-300 shadow-lg cursor-pointer' color='white'/>
                         </a>
-                        <ActionButton setSelectedPage={setSelectedPage}>Download CV</ActionButton>
+                        <a href="https://drive.google.com/file/d/1ujzizUFSXW2icroKXGKzwgcuGSBusFG1/view?usp=sharing" className="text-white bg-primary hover:bg-primary-300 focus:ring-4 font-medium rounded-full text-sm px-10 py-3">Download CV</a>
                     </div>
                 </div>
             </motion.div>
